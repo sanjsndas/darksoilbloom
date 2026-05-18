@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Darksoil Bloom Collective</title>
+    <style>
+        :root {
+            --dark-soil: #1b1f1c;
+            --leaf-green: #2d5a27;
+            --moss: #4a7c44;
+            --bloom-white: #f4f7f2;
+            --accent-gold: #c5a059;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            background-color: var(--bloom-white);
+            color: var(--dark-soil);
+        }
+
+        header {
+            background-color: var(--dark-soil);
+            color: var(--bloom-white);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--leaf-green);
+        }
+
+        nav {
+            background: var(--leaf-green);
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -50px auto 40px;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h2 { color: var(--leaf-green); border-left: 5px solid var(--accent-gold); padding-left: 15px; margin-top: 30px; }
+        
+        .mission-box {
+            background-color: #f9fbf9;
+            border: 1px solid #e0eadd;
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            text-align: center;
+            color: var(--moss);
+            font-size: 1.2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 20px;
+            background: var(--bloom-white);
+            border-radius: 8px;
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-gold);
+        }
+
+        footer {
+            background-color: var(--dark-soil);
+            color: #888;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-info {
+            color: var(--bloom-white);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Darksoil Bloom Collective</h1>
+    <p>Cultivating Wisdom, One Seed at a Time</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+</nav>
+
+<div class="about-hero">
+    <div>
+        <h1>Rooted in Knowledge</h1>
+        <p>Discover the story behind the collective.</p>
+    </div>
+</div>
+
+<div class="container">
+    <section>
+        <h2>Our Origin Story</h2>
+        <p>Founded in 2018, the <strong>Darksoil Bloom Collective</strong> began as a small group of local horticulturists in Verdant Valley who shared a common frustration: the digital world was full of gardening "hacks," but empty of true biological understanding. We decided to bridge that gap.</p>
+        
+        <p>What started as a monthly newsletter has grown into a 79,000-word living archive. We don't just tell you when to plant; we explain the symbiotic relationship between fungal networks and root systems, ensuring your garden thrives from the bottom up.</p>
+
+        <div class="mission-box">
+            "To restore the ancestral bond between humans and soil through science-backed stewardship and sustainable beauty."
+        </div>
+
+        <h2>What We Do</h2>
+        <p>We provide a comprehensive resource for gardeners of all levels. Our collective expertise covers:</p>
+        <ul>
+            <li><strong>Permaculture Design:</strong> Creating self-sustaining ecosystems.</li>
+            <li><strong>Soil Restoration:</strong> Turning depleted dirt into nutrient-rich "Darksoil."</li>
+            <li><strong>Heirloom Preservation:</strong> Protecting biodiversity through seed saving.</li>
+            <li><strong>Urban Agriculture:</strong> Bringing the green revolution to concrete jungles.</li>
+        </ul>
+
+        <h2>Meet the Curators</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Founder">
+                <h3>Elias Thorne</h3>
+                <p>Lead Soil Microbiologist</p>
+            </div>
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Botanist">
+                <h3>Sarah Moss</h3>
+                <p>Master Ethnobotanist</p>
+            </div>
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Designer">
+                <h3>Julian Reed</h3>
+                <p>Permaculture Architect</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="footer-info">
+        <p><strong>Darksoil Bloom Collective</strong></p>
+        <address>
+            1242 Evergreen Terrace, Verdant Valley, WA 98101<br>
+            Phone: (555) 010-GREEN (4733)
+        </address>
+        <p>&copy; 2026 Darksoil Bloom Collective. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Darksoil Bloom Collective</title>
+    <style>
+        :root {
+            --dark-soil: #1b1f1c;
+            --leaf-green: #2d5a27;
+            --moss: #4a7c44;
+            --bloom-white: #f4f7f2;
+            --accent-gold: #c5a059;
+            --error-red: #8b0000;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            background-color: var(--bloom-white);
+            color: var(--dark-soil);
+        }
+
+        header {
+            background-color: var(--dark-soil);
+            color: var(--bloom-white);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--leaf-green);
+        }
+
+        nav {
+            background: var(--leaf-green);
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav li {
+            display: inline;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        h2 { 
+            color: var(--leaf-green); 
+            border-left: 5px solid var(--accent-gold); 
+            padding-left: 10px; 
+            margin-bottom: 30px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: var(--leaf-green);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: var(--leaf-green);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--moss);
+        }
+
+        .contact-info-box {
+            background-color: #f9fbf8;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 3px solid var(--accent-gold);
+        }
+
+        footer {
+            background-color: var(--dark-soil);
+            color: #888;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer-info {
+            color: var(--bloom-white);
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Darksoil Bloom Collective</h1>
+    <p>Get in Touch with our Botanical Experts</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <section id="contact-content">
+        <h2>Reach Out to the Collective</h2>
+        <p>Have a question about soil pH, heirloom seeds, or pest management? Our team of master gardeners and biologists are here to help your garden thrive.</p>
+        
+        <div class="contact-grid">
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="yourname@domain.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Inquiry Type</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Gardening Advice</option>
+                            <option value="soil">Soil Testing & Biology</option>
+                            <option value="membership">Collective Membership</option>
+                            <option value="media">Media & Press</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required placeholder="How can we help your garden grow?"></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-box">
+                <h3>Our Headquarters</h3>
+                <p><strong>Location:</strong><br>
+                1242 Evergreen Terrace<br>
+                Verdant Valley, WA 98101</p>
+
+                <p><strong>Office Hours:</strong><br>
+                Monday — Friday: 8:00 AM - 5:00 PM<br>
+                Saturday: 9:00 AM - 1:00 PM (Garden Tours Only)</p>
+
+                <p><strong>Direct Contact:</strong><br>
+                Phone: (555) 010-4733<br>
+                Email: hello@darksoilbloom.com</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="footer-info">
+        <p><strong>Darksoil Bloom Collective</strong></p>
+        <address>
+            1242 Evergreen Terrace, Verdant Valley, WA 98101<br>
+            Phone: (555) 010-GREEN (4733)
+        </address>
+        <p>&copy; 2026 Darksoil Bloom Collective. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
